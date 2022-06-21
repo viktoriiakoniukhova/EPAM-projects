@@ -1,0 +1,39 @@
+#app-root{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+fieldset{
+    max-width: 30%;
+    margin: 0 auto;
+    display: flex;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td{
+    border: 2px solid black;
+}
+
+table tr:nth-child(even){
+    background-color: hsl(0, 0%, 90%);
+}
+
+table th{
+    background-color: lightgreen;
+}
+
+table tr{
+    height: 50px;
+}
+
+table tr:hover{
+    background-color: grey;
+}

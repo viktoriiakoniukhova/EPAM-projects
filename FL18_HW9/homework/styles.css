@@ -1,0 +1,117 @@
+div{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+}
+/* START: Task 1 Styles */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+
+    padding: 3px 5px;
+    line-height: 100px;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+#div-message{
+    width: 50%;
+    display: none;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    display: flex;
+}
+input{
+    width: 30%;
+    line-height: 3em;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+button{
+    width: 20%;
+    line-height: 3em;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+img{
+    display: block;
+    margin: 0 auto;
+}
+#court-png{
+    width: 600px;
+    height:330px;
+}
+#ball-png{
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#image-stack,#team-ab{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#score-zone-a, #score-zone-b{
+    padding: 0;
+    height: 15px;
+    width: 15px;
+
+    position: absolute;
+    display: inline-block;
+    z-index: 5;
+    top: 156px;
+
+}
+#score-zone-a{
+    left: 365px;
+}
+#score-zone-b{
+    right: 365px;
+}
+#team-ab{
+    width: 600px;
+    height: auto;
+}
+#team-a, #team-b{
+    width: 70px;
+}
+#team-a{
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+#team-b{
+    display: inline-block;
+    padding: 0;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-70%,0%);
+}
+#message-1{
+    display: block;
+    padding: 0;
+
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/* END: Task 3 Styles */

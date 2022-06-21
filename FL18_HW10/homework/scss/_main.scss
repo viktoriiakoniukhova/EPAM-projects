@@ -1,0 +1,185 @@
+@mixin font($size: 14px, $weight: bold,$height:1,$text-color:black){
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $text-color;
+}
+
+@mixin btn-style(){
+  background-color: $btn-color;
+  @include font($size:12px, $text-color:$btn-text-color);
+  text-align: center;
+  width: 105px;
+  height: 35px;
+  border: none;
+}
+
+@mixin link-style($link-color:white){
+  @include font($size: 14px, $weight: 550,$text-color:$link-color);
+  text-decoration-thickness: 2px;
+}
+
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  background-color: $back_color;
+}
+div{
+  position: relative;
+  overflow: auto;
+}
+.header,.section{
+  margin-left: 125px;
+}
+.span-marked{
+  background-color: $grad-color-2;
+}
+.landing-logo{
+  margin-top: 8px;
+  img{
+    width: $logo_size/1.3;
+    height: $logo_size/1.3;
+    float: left;
+  }
+  p{
+    margin:0 0 5px ($logo_size/1.3+10);
+    @include font($size:17px,$weight:550,$height:1.4,$text-color:$welcome-text-color);
+    width: 50px;
+    span{
+      vertical-align: top;
+      text-align: center;
+      @include font($size:7px,$weight:normal,$text-color:$welcome-text-color);
+      display: block;
+    }
+  }
+}
+
+p{
+  margin-bottom: 25px;
+}
+.header_heading{
+  @extend p;
+  @include font($size:50px,$height:1.05,$text-color:$welcome-text-color);
+  width: 400px;
+}
+.header_text{
+  @extend p;
+  @include font($size:12px,$weight:lighter, $height: 1.5,$text-color:$welcome-text-color);
+  white-space: pre-line;
+}
+button{
+  margin-top: 18px;
+  @include btn-style();
+}
+.login{
+  @include link-style;
+  float: right;
+  margin-right: 900px;
+  margin-top: 30px;
+}
+.header{
+  padding-bottom: 126px;
+}
+#m-h-photo{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 78%;
+  width: 100%;
+  object-fit:cover;
+  z-index: map-get($z-layers, underlay);
+  border-radius: 0 0 40% 0;
+}
+.section{
+  .section_text{
+    @include font($size:30px,$weight:bold,$text-color:$welcome-text-color);
+    text-align: left;
+    margin-left:410px;
+  }
+  .section_card_wrap{
+    width: 64.5%;
+    margin-left: 155px;
+
+    .section_card{
+      background-color: $section-card-color;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      height: 220px;
+      overflow: auto;
+      padding:15px;
+
+      .section_card_img{
+        float: left;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      .section_card_right_container{
+        padding: 30px;
+        @include font($size: 12px,$text-color: #c0c3ce, $weight:normal,$height:1.5);
+        text-align: center;
+        .section_card_heading{
+          @include font($size: 18px, $weight:bold, $text-color:white);
+          text-align: center;
+        }
+      }
+      .section_link{
+        @include link-style($link-color:#c0c3ce);
+      }
+    }
+  }
+  margin-bottom: 100px;
+}
+.section_banner{
+  position: absolute;
+  top: 1450px;
+  width: 860px;
+  margin-left: 130px;
+  padding: 5px 40px 5px 40px;
+  border-radius: 5px;
+  background: $grad-color-1;
+  background: linear-gradient(90deg, $grad-color-1 0%, $grad-color-2 100%);
+  z-index: map-get($z-layers, overlay);
+  .section_banner_text_wrap{
+    margin-left: 100px;
+    .section_banner_heading{
+      @include font($size: 20px, $weight:bold, $text-color:$welcome-text-color);
+    }
+    .section_banner_text{
+      @include font($size: 12px, $weight:normal, $text-color:white);
+    }
+  }
+  .section_banner_button{
+    @include btn-style();
+    float: right;
+    margin-right: 100px;
+    margin-top: -70px;
+  }
+}
+.footer{
+  position: relative;
+
+  display: table;
+  table-layout: fixed;
+  left: 0;
+  bottom: 0;
+
+  padding: 1.25em;
+  background-color: $section-card-color;
+  div{
+    display: table-cell;
+    width: 33.333%;
+    padding: 2em 0 0 2em;
+    text-align: center;
+    p{
+      @include font($size: 15px, $weight: normal, $text-color: white);
+      span{
+        @include font($size: 7px, $weight: normal, $text-color: white);
+        vertical-align: top;
+      }
+    }
+    span{
+      @include font($size: 15px, $weight: normal, $text-color: white);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/*Your code goes here*/
+.body{
+    font-family: 'Roboto',sans-serif;
+}
+.btn-orange{
+    background-color: #F4794D;
+    color: #fff;
+}
+.btn-light-orange{
+    background-color: #FF7F50;
+    color: #fff;
+}
+.main-text{
+    font-size: 2vw;
+}
+.main-text h2{
+    font-size: 4vw;
+    font-weight: 450;
+}
+.main-text h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.first-div, .footer{
+    background-color: #343A40;
+    color: white;
+}
+.second-div{
+    background-color: #F8F9FA;
+}
+.shadow{
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.main-text-footer{
+    font-size: 1.3vw;
+}
+.nav-ul{
+    font-size: 1.5vw;
+}
+.nav-link{
+    color: #525252;
+}
+.nav-link:after{
+    color: #000;
+}

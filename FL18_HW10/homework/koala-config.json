@@ -1,0 +1,22 @@
+{
+  "mappings": [
+    {
+      "src": "/scss",
+      "dest": "/css"
+    }
+  ],
+
+  "ignores": ["*.css"],
+
+  "options": {
+    "outputStyle": "nested",
+    "lineComments": false,
+    "debugInfo": false,
+    "sourceMap": false,
+    "unixNewlines": false,
+    "autoprefix": false
+  },
+  "customOptions": [],
+  "includePaths": [],
+  "requireLibs": []
+}

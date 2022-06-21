@@ -1,0 +1,545 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+.position-cont{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1% 0 10%;
+  background-color: #fff;
+}
+.header-nav--menu{
+  display: flex;
+}
+.header-nav--menu ul{
+  display: flex;
+  list-style: none;
+}
+.header-nav--menu ul li{
+  margin-left:20px;
+}
+.header-nav--menu a:link{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.header-nav--menu a:visited{
+  color: black;
+}
+.header-nav--menu a:hover{
+  color: #0078AA;
+}
+
+.header-cont{
+  display: flex;
+  flex: 15;
+  margin-left: 10%;
+
+  background-image: url("/fl-18/FL18_HW12/homework/img/lady.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.cont-div{
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+.cont-div .cont-div-heading{
+  line-height: normal;
+}
+h2:first-child{
+  line-height: 70%;
+}
+.cont-div-heading{
+  font-size: 38px;
+  margin-bottom: 2%;
+  line-height: normal;
+}
+.cont-div-heading span{
+  font-weight: normal;
+  font-size: 0.5em;
+}
+.cont-div-p{
+  white-space: pre-line;
+}
+.header-cont .cont-div p{
+  color: #999999;
+}
+.cont-div ul{
+  align-self: center;
+  display: flex;
+  margin-top: 5%;
+  padding: 0;
+}
+.cont-div li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  background: #0078AA;
+  width: 50px;
+  height: 50px;
+  margin-right: 5%;
+  border-radius: 50%;
+
+}
+.cont-div li:hover{
+  background: #fff;
+}
+.header .fa{
+  color: #fff;
+}
+.cont-div .fa:hover{
+  color: #0078AA;
+}
+.header-cont-arrow-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0078AA;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0.5%;
+
+  position: fixed;
+  top: 80%;
+  right: 10%;
+}
+#main-cont-about-us{
+  display: flex;
+}
+#cont-image-about-us{
+  display: flex;
+  flex: 1;
+
+  background-image: url("/fl-18/FL18_HW12/homework/img/tools.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#cont-div-about-us{
+  padding: 3% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#cont-div-about-us h2 span{
+  color: #0078AA;
+}
+.about-us-article .cont-div-p{
+  width: 70%;
+  color: #000;
+}
+.main-cont-arrow-alt-right{
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+}
+h4{
+  display: inline-flex;
+}
+.about-us-article p{
+  font-size: 14px;
+}
+#main-cont-help{
+  padding: 3%;
+  background-image: url("/fl-18/FL18_HW12/homework/img/services_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#main-cont-help .cont-div-heading{
+  width: 100%;
+  text-align: center;
+}
+.cont-div-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cont-div-blocks{
+  display: flex;
+  flex-direction: column;
+  width:26%;
+
+  padding: 1%;
+  background-color: #fff;
+  margin: 2% 0 2% 0;
+}
+.cont-div-blocks img{
+  object-fit: none;
+  align-self: flex-start;
+}
+#main-cont-offers .cont-div-heading{
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+}
+#main-cont-offers{
+  background-image: url("/fl-18/FL18_HW12/homework/img/pricing_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cont-div-block-offers{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.offer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+
+  white-space: pre-line;
+  text-align: center;
+  line-height: 50px;
+}
+.cont-div-side-offers{
+  width: 30%;
+  margin-top: 1.5em;
+  margin-bottom:1.5em;
+
+  background-color: #47C9E5;
+  color: #fff;
+}
+.cont-div-main-offer{
+  width: 25%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  background-color: #fff;
+  color: #0078AA;
+  border: 1px solid #0078AA;
+}
+button{
+  max-height: 10%;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  min-width: 45%;
+}
+.cont-div-main-offer button{
+  min-width: 60%;
+}
+.cont-div-side-offer button{
+}
+.offer button:hover,form button{
+  background-color: #0078AA;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.offer button, form button:hover{
+  background-color: #fff;
+  border: 2px solid #0078AA;
+
+  color: #0078AA;
+}
+.offer span{
+  font-weight: bold;
+  font-size: 45px;
+}
+.offer p{
+  font-size: 14px;
+}
+#main-cont-app{
+  display: flex;
+}
+#cont-image-app{
+  flex: 1;
+
+  background-image: url("/fl-18/FL18_HW12/homework/img/contact_image.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+#cont-div-app{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+#cont-div-form{
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  padding: 5% 5% 0 5%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-el{
+  display: flex;
+  margin: 2% 2% 4% 2%;
+}
+form button{
+  padding: 2%;
+  min-width: 80px;
+  max-width: 15%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999999;
+}
+input::placeholder{
+  font-style: italic;
+  color: #000;
+}
+footer{
+  display: flex;
+}
+.footer-cont{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+
+  padding: 1%;
+  background-color: #363636;
+  color: #fff;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .header-nav {
+    padding: 0 1% 0 3%;
+  }
+  .header-cont{
+    margin-left: 0;
+    background-size: cover;
+    background-position-x: 30%;
+  }
+  .header-cont .cont-div{
+    padding-left:3%;
+    width:80%;
+  }
+  .header-cont .cont-div p{
+    width:60%;
+  }
+  .cont-div-block{
+    justify-content: space-between;
+  }
+  .cont-div-blocks{
+    width:30%;
+  }
+  .cont-div-block-offers{
+    justify-content: space-between;
+    padding: 3%;
+  }
+  .cont-div-side-offers{
+    width: 35%;
+  }
+  .cont-div-main-offer{
+    width: 30%;
+  }
+  #cont-image-app{
+    background-size: cover;
+    background-position-x: -30%;
+  }
+  #cont-div-app .cont-div-heading{
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+  }
+  #header-nav--logo{
+    padding-top: 3%;
+  }
+  .header-nav--menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .header-nav--menu ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+  }
+  .header-nav--menu ul li{
+    margin:0 2% 0 2%;
+  }
+
+  .header-cont{
+    margin-top: 13%;
+    background-size: cover;
+    background-position-x: 35%;
+  }
+  .cont-div{
+    width: 100%;
+    padding-top: 40%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  .cont-div ul {
+    justify-content: space-evenly;
+  }
+  #main-cont-about-us{
+    display: flex;
+    flex-direction: column;
+  }
+  #cont-image-about-us{
+    min-height: 500px;
+  }
+  .about-us-article{
+    text-align: center  ;
+  }
+  .about-us-article .cont-div-p {
+    width: 100%;
+  }
+  .cont-div-blocks{
+    flex-direction: column;
+    width:100%;
+    padding: 5%;
+    margin: 2% 0 4% 0;
+  }
+  .cont-div-block-offers{
+    flex-direction: column;
+  }
+  .offer{
+    flex-direction: column;
+    padding: 5%;
+    width: 100%;
+    margin: 0.5em;
+  }
+  .cont-div-main-offer{
+    border: 2px solid #0078AA;
+  }
+  .cont-div-main-offer button{
+    min-width: 45%;
+  }
+  .offer h3{
+    font-size: 30px;
+  }
+  #main-cont-app {
+    flex-direction: column;
+  }
+  #cont-image-app {
+    background-size: cover;
+    min-height: 500px;
+  }
+  #cont-div-app .cont-div-heading,#cont-div-about-us .cont-div-heading{
+    margin-top: 5%;
+    padding: 0 20% 0 20%;
+    text-align: center;
+    line-height: normal;
+  }
+  form button{
+    margin: 0 auto;
+  }
+  .footer-cont{
+    padding: 3%;
+  }
+}

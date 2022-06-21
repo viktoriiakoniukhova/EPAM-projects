@@ -1,0 +1,144 @@
+/* 
+
+write your code here
+
+*/
+@media print {
+
+    .tm-sidebar,
+    .tm-content-box:not(.tm-content-box:first-of-type),
+    section:not(section:first-of-type){
+        display: none;
+    }
+    .tm-banner{
+        padding: 0px;
+        border-radius: 0px;
+    }
+    body{
+        background-color: unset;
+    }
+    .tm-sidebar{
+        display: none;
+    }
+    .flex-item>img{
+        width:180px;
+        height:150px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    section::before{
+        display: none;
+    }
+    .tm-main-content{
+        margin-right:10%;
+        margin-left: 10%;
+    }
+    h2.tm-section-title {
+        color: blue;
+    }
+}
+
+p.tm-section-description::first-letter, .tm-banner-text::first-letter, .tm-footer::first-letter{
+    color: #1f7e9a;
+    font-size: 30px;
+}
+
+h2 + p.tm-section-description{
+    font-style: italic;
+}
+
+.flex-2-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-bg:hover h2{
+    background-color: lightskyblue;
+    color: white;
+    font-weight:bold;
+}
+nav, .tm-content-box{
+    box-shadow: 0px 0px 6px 1px grey;
+}
+.tm-nav-item-link:hover{
+    background-color: lightgrey;
+
+}
+
+.tm-banner{
+    border: 1px solid gray;
+    background: #F5F5F5;
+}
+.tm-banner-inner{
+    background-color: white;
+}
+section:before{
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width: 30px 250px 0 0;
+    border-color: #87CEFA transparent;
+    content: '';
+}
+
+.carousel-content h2.tm-section-title{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+p:not(.tm-banner-text) {
+    text-indent: 1.5em;
+    line-height: 1.8em;
+}
+
+ul.boxes.gallery-container li p{
+    text-indent: 0px;
+}
+
+li > a{
+    color:inherit;
+}
+li > a:hover{
+    color: lightblue;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.text::after {
+    content: "New";
+    vertical-align: super;
+    position: absolute;
+    color: red;
+    line-height: 0;
+    font-size: 0.5em;
+}
+.btn-primary{
+    float: right;
+    border-radius: 0px;
+    background-color: white;
+    color: lightskyblue;
+    border-color: lightskyblue;
+}
+.btn-primary:hover{
+    background-color: lightskyblue;
+    color: lightgrey;
+    border-color: lightskyblue;
+}
+
+.form-group.col-xs-12.col-sm-12.col-md-6.col-lg-6.form-group-2-col-right.mandatory-field:after {
+    content:"*";
+    color: red;
+}
+
+.box:nth-child(even){
+    background-color: lightgrey;
+}
+.box p{
+    font-style: italic;
+}
+.box p::first-letter{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: x-large;
+}
