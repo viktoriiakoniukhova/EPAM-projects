@@ -86,7 +86,7 @@ header{
     flex-direction: column;
     color: white;
     min-height: 919px;
-    background-image: url("/fl-18/FL18_HW11/homework/img/apples.jpg");
+    background-image: url("/img/apples.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ header{
 
 .body_article_info__right_img{
     flex: 2;
-    background-image: url("/fl-18/FL18_HW11/homework/img/sample.jpg");
+    background-image: url("/img/sample.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 300px;
@@ -229,7 +229,7 @@ header{
 
 .body_article_info__left_img{
     flex: 2;
-    background-image: url("/fl-18/FL18_HW11/homework/img/sample1.jpg");
+    background-image: url("/img/sample1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 300px;

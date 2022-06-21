@@ -129,7 +129,7 @@ header{
   flex: 15;
   margin-left: 10%;
 
-  background-image: url("/fl-18/FL18_HW12/homework/img/lady.jpg");
+  background-image: url("/img/lady.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,7 +211,7 @@ h2:first-child{
   display: flex;
   flex: 1;
 
-  background-image: url("/fl-18/FL18_HW12/homework/img/tools.png");
+  background-image: url("/img/tools.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -242,7 +242,7 @@ h4{
 }
 #main-cont-help{
   padding: 3%;
-  background-image: url("/fl-18/FL18_HW12/homework/img/services_bg.jpg");
+  background-image: url("/img/services_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -275,7 +275,7 @@ h4{
   text-align: center;
 }
 #main-cont-offers{
-  background-image: url("/fl-18/FL18_HW12/homework/img/pricing_bg.jpg");
+  background-image: url("/img/pricing_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -348,7 +348,7 @@ button{
 #cont-image-app{
   flex: 1;
 
-  background-image: url("/fl-18/FL18_HW12/homework/img/contact_image.jpg");
+  background-image: url("/img/contact_image.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
