@@ -1,0 +1,104 @@
+body{
+    margin: 0 auto;
+    max-width: 70%;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.wrapper{
+    flex-basis: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+/*--------------------------------- Calculator styles ---------------------------------*/
+.calc-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    width: 40%;
+
+    background-color: #b1dfbb;
+    border: 5px solid #71dd8a;
+    border-radius: 5%;
+    padding: 5%;
+}
+.calc-wrapper--screen{
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 5%;
+    margin-bottom: 5%;
+
+    background-color: #fbe5e5;
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2) inset;
+}
+.calc-wrapper--keyboard-wrapper{
+    display: flex;
+
+    padding: 1%;
+    background-color: #fcf8e3;
+}
+.calc-wrapper-keyboard-wrapper--keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    width: 100%;
+
+    justify-items: stretch;
+    align-items: stretch;
+}
+.calc-wrapper-keyboard-wrapper--keyboard > button{
+    display: grid;
+    aspect-ratio: 1/1;
+    align-content: center;
+    justify-content: center;
+
+    margin: 2%;
+    box-shadow: 0 0 4px 0 #b1dfbb inset;
+    background-color: #fcf8e3;
+    border: 3px solid #b1dfbb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /*color: #71dd8a;*/
+}
+button:hover{
+    background-color: #b1dfbb;
+    color: #fcf8e3;
+}
+.empty{
+    pointer-events: none;
+}
+.calc-wrapper-keyboard-wrapper--keyboard > .empty{
+    background-color: #b1dfbb;
+}
+/*--------------------------------- Logs styles ---------------------------------*/
+.logs-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.logs-wrapper--log{
+    visibility: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 30fr 3fr;
+
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+.logs-wrapper-log--circle{
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.logs-wrapper-log--cross{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.logs-wrapper--log p{
+    margin: 0;
+    text-align: center;
+}

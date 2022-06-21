@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap'); //WHYYYYYYYYYYYYYYYYYYYYYYYYY
+
+$main_color: #F55536;
+$main_border_color: #444545;
+$block_color: #B5FFE9;
+$block_border_color : #339989;
+
+@mixin block_style($width){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $block_color;
+  width: $width;
+
+  border: 3px solid $block_border_color;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Rowdies', cursive;
+  font-size: 20px;
+}
+.wrapper{
+  display: flex;
+  width: 50%;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 3%;
+  background-color: $main_color;
+  border: 5px solid $main_border_color;
+  border-radius: 10px;
+
+}
+.wrapper--header{ @include block_style(100%)}
+.wrapper--rules{
+  @include block_style(100%);
+  p{
+    padding: 2%;
+    text-align: justify;
+  }
+}
+
+.wrapper--btn{
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+  //align-items: flex-start;
+
+  .btn {
+    @include block_style(30%);
+    align-items: center;
+    p{
+      font-size: 100px;
+      margin: 0;
+    }
+  }
+}
+.wrapper--reset{
+  @include block_style(100%);
+  margin-bottom: 0;
+  padding: 2% 0 2% 0;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.wrapper--score{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.playerScore, .computerScore{
+  display: flex;
+}
+.wrapper--result{
+  display: flex;
+  font-size: 1.2rem;
+}

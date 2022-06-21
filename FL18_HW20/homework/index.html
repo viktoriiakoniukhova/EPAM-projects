@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Tools</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+  <div class="wrapper">
+        <div class="wrapper--header">
+            <p>LET'S PLAY!</p>
+        </div>
+        <div class="wrapper--rules">
+            <p>A classic two-person game. Players start each round by saying,
+                &quot;rock, paper, scissors, shoot!&quot; On &quot;shoot&quot; each player holds
+                out their fist for rock, flat hand for paper, or their index
+                and middle finger for scissors. Rock crushes scissors, scissors
+                cut paper, and paper covers rock. See who wins each round!</p>
+        </div>
+        <div class="wrapper--btn">
+            <button class=" btn wrapper-btn--rock" id="rock">
+                <p>&#9994;&#127995;</p>
+            </button>
+            <button class=" btn wrapper-btn--paper" id="paper">
+                <p>&#9995;&#127995;</p>
+            </button>
+            <button class=" btn wrapper-btn--scissors" id="scissors">
+                <p>&#9996;&#127995;</p>
+            </button>
+        </div>
+        <div class="wrapper--moves">Moves Left: 3</div>
+        <div class="wrapper--score">
+            <div class="playerScore">
+              <p>Player: <span class="p-count count">0</span></p>
+            </div>
+            <div class="computerScore">
+              <p>Computer: <span class="c-count count">0</span></p>
+            </div>
+        </div>
+        <div class="wrapper--result"></div>
+        <div class="wrapper--reset">
+            <a href="#">RESET</a>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
