@@ -229,7 +229,7 @@ header{
 
 .body_article_info__left_img{
     flex: 2;
-    background-image: url("/img/sample1.jpg");
+    background-image: url("/img/apples.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 300px;

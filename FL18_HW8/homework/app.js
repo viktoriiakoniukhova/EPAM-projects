@@ -118,67 +118,6 @@ tContainer.setAttribute('id', 'tableContainer');
 
 appRoot.appendChild(tContainer);
 
-// function createTable(data) {
-//     let table = document.createElement('table');
-//     form.appendChild(table);
-//     let thead = document.createElement('thead');
-//     table.appendChild(thead);
-//
-//     let headList = ['Country Name', 'Capital', 'World Region', 'Languages', 'Area', 'Flag'];
-//
-//     // let name = document.createElement('th');
-//     // name.innerHTML = headList[0];
-//     // let capital = document.createElement('th');
-//     // capital.innerHTML = headList[1];
-//     // let region = document.createElement('th');
-//     // region.innerHTML = headList[2];
-//     // let languages = document.createElement('th');
-//     // languages.innerHTML = headList[3];
-//     // let area = document.createElement('th');
-//     // area.innerHTML = headList[4];
-//     // let flag = document.createElement('th');
-//     // flag.innerHTML = headList[5];
-//     // thead.append(name, capital, region, languages, area, flag);
-//
-//
-//     for(let i = 0; i < headList.length; i++){
-//         let heading = document.createElement('th');
-//         heading.innerHTML = headList[i];
-//         thead.appendChild(heading);
-//     }
-//
-//     let tbody = document.createElement('tbody');
-//     table.appendChild(tbody);
-//
-//     for(let i = 0; i < data.length; i++){
-//         let row = document.createElement('tr');
-//
-//         const name = document.createElement('td');
-//         const capital = document.createElement('td');
-//         const region = document.createElement('td');
-//         const languages = document.createElement('td');
-//         const area = document.createElement('td');
-//         const flag = document.createElement('td');
-//
-//         let langArray = [];
-//
-//         for(let val in data[i].languages){
-//             langArray.push(data[i].languages[val]);
-//         }
-//
-//         name.innerHTML = data[i].name;
-//         capital.innerHTML = data[i].capital;
-//         region.innerHTML = data[i].region;
-//         languages.innerHTML = langArray;
-//         flag.innerHTML = data[i].flag;
-//
-//         tbody.appendChild(row);
-//         tbody.append(name, capital, region, languages, area, flag);
-//
-//     }
-//     tContainer.appendChild(table);
-// }
-
 function createTable(data) {
     let table = document.createElement('table');
     form.appendChild(table);
